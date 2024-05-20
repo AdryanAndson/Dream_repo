@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>Dreamcast</title>
+</head>
+<body>
+    <header class="cabeça" id="cabeça" onclick="playMusic('dream')"><img src="img/Dreamcast.png" alt="logo" class="logo"></header>
+
+    <p class="resumo">
+        O Dreamcast foi um console de videogame lançado pela Sega em 1998, conhecido por sua inovação e por oferecer uma experiência de jogo avançada para a época. Foi o primeiro console a apresentar uma unidade de modem integrada, permitindo jogos online, e também introduziu o VMU (Visual Memory Unit), uma unidade de memória portátil que funcionava como um segundo display. Apesar de ser elogiado por sua qualidade de hardware e biblioteca de jogos impressionante, o Dreamcast enfrentou competição acirrada de consoles rivais e uma série de problemas de marketing. A Sega descontinuou o Dreamcast em 2001, marcando o fim da era dos consoles de videogame da Sega e uma transição para a produção de jogos de software. 
+    </p>
+    <div class="caixa">
+        <p>Confira Alguns jogos desse classico console</p>
+    </div>
+    <audio id="dream" loop>
+        <source src="music/dreamsound.mp3"  type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <audio id="music1">
+        <source src="music/soncadv.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <audio id="music2">
+        <source src="music/Shenmue.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <audio id="music3">
+        <source src="music/jetset.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+
+    <div class="game" id="game1" onclick="playMusic('music1')">
+        <img src="img/sonicadv.jpg" alt="Sonic Adventure">
+        <div class="overlay">Sonic Adventure<br><br>
+            Sonic Adventure é um jogo de plataforma lançado para o Dreamcast em 1999. Nele, os jogadores controlam Sonic e outros personagens em uma aventura para salvar o mundo dos planos do Dr. Eggman.</div>
+    </div>
+
+    <div class="game" id="game2" onclick="playMusic('music2')">
+        <img src="img/shemue.jpg" alt="Shenmue">
+        <div class="overlay">Shenmue<br><br>
+            Shenmue é um jogo de ação e aventura lançado para o Dreamcast em 1999. O protagonista, Ryo Hazuki, embarca em uma jornada para vingar a morte de seu pai e descobrir os segredos por trás de um artefato misterioso.</div>
+    </div>
+
+    <div class="game" id="game3" onclick="playMusic('music3')">
+        <img src="img/jetset.jpeg" alt="Jet Set Radio">
+        <div class="overlay">Jet Set Radio<br><br>
+            Jet Set Radio, também conhecido como Jet Grind Radio, é um jogo de skate lançado para o Dreamcast em 2000. Os jogadores controlam skatistas rebeldes que desafiam autoridades e expressam sua arte urbana através de grafites.</div>
+    </div>
+</body>
+</html>

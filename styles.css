@@ -1,0 +1,93 @@
+
+body{
+    background-image: url('img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    max-width: 200px; /* Reduz a largura máxima da logo para 200 pixels */
+    width: 100%; /* Faz com que a logo ocupe toda a largura disponível */
+    height: auto; /* Altura automática para manter a proporção */
+    display: block; /* Transforma a imagem em um bloco para poder centralizá-la */
+    margin: 0 auto; /* Centraliza a logo horizontalmente */
+}
+/* styles.css */
+.resumo {
+    font-size: 14px; /* Aumenta o tamanho da fonte */
+    text-align: center;
+    font-weight: 700; /* Define o peso da fonte para mais grosso */
+    color: #000; /* Define a cor do texto como preto */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Mantém a sombra do box */
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7); /* Adiciona uma sombra ao texto */
+}
+.caixa{
+    width: 150px;
+    height: 100px;
+    background: url(img/backgrounddrea.gif);
+    border: 2px solid #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.caixa p {
+    font-size: 20px; /* Aumenta o tamanho da fonte */
+    font-weight: 900; /* Define o peso da fonte para mais grosso */
+    color: #000; /* Define a cor do texto como preto */
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7); /* Adiciona uma sombra ao texto */
+}
+
+@font-face {
+    font-family: 'Segan-Light';
+    src: url('Segan-Light.ttf') format('truetype');
+  }
+
+.game{
+    width: 200px;
+    height: 200px;
+    border: 2px solid #000;
+    position: relative;
+    overflow: hidden;
+    margin: 20px;
+    float: left;
+    box-shadow: 10px 10px 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;;
+}
+
+.game img{
+    width: 100%;
+    height: auto;
+}
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(42, 42, 44, 0.5);
+    color: #fff;
+    padding: 8px;
+    box-sizing: border-box;
+    text-align: center;
+    transform: translateY(100%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.overlay:hover {
+    background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
+}
+
+img:hover{
+    opacity: 0.5;
+}
+.game:hover .overlay{
+    opacity: 1;
+    transform: translateY(0);
+}
